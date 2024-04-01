@@ -1,0 +1,25 @@
+CREATE TABLE "TB_MUNICIPIOS" (
+	"ID"	INTEGER NOT NULL,
+	"Estado"	TEXT NOT NULL,
+	"Mesorregiao"	TEXT NOT NULL,
+	"Microrregiao"	TEXT NOT NULL,
+	"Municipio"	TEXT NOT NULL,
+	"Cod_IBGE"	TEXT NOT NULL,
+	"X"	REAL NOT NULL,
+	"Y"	REAL NOT NULL,
+	PRIMARY KEY("ID" AUTOINCREMENT)
+)
+
+SELECT * FROM TB_MUNICIPIOS;
+INSERT INTO TB_MUNICIPIOS (Estado, Mesorregiao, Microrregiao, Municipio, Cod_IBGE, X, Y) VALUES
+	('Ceará', 'Metropolitana de Fortaleza', 'Pacajus', 'Horizonte', '2305233', -38.4936624, -4.1047411),
+	('Ceará', 'Metropolitana de Fortaleza', 'Pacajus', 'Pacajus', '2309607', -38.4710437, -4.1723054),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Aquiraz', '2301000', -38.390087, -3.904531),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Caucaia', '2303709', -38.645397, -3.733291),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Fortaleza', '2304400', -38.523691, -3.725158),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Eusébio', '2304285', -38.463222, -3.894137),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Guaiuba', '2304954', -38.63480, -4.03958),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Itaitinga', '2306256', -38.51867, -3.97489),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Maracanaú', '2307650', -38.6302394, -3.8796465),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Maranguape', '2307700', -38.682393, -3.898914),
+	('Ceará', 'Metropolitana de Fortaleza', 'Fortaleza', 'Pacatuba', '2309706', -38.6231269, -3.98479310);
